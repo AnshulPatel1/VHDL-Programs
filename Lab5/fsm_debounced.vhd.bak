@@ -1,0 +1,37 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY fsm_debounced IS
+PORT (osc,resetn,w,x: IN STD_LOGIC;
+u                    :OUT STD_LOGIC_VECTOR (7 DOWNTO 0));
+END fsm_debounced;
+
+ARCHITECTURE a OF fsm_debounced IS
+TYPE STATE IS (s0,s1,s2,s3,s4,s5,s6,s7);
+SIGNAL y,yfsm :STATE;
+SIGNAL z : STD_LOGIC;
+BEGIN 
+-- DEBOUNCER
+PROCESS (resetn,z)
+BEGIN 
+IF resetn = '0' THEN
+yfsm <=s0;
+ELSIF (z 'EVENT AND z= '1') THEN
+CASE y IS
+WHEN s0 =>
+WHEN s1 =>
+WHEN s2 =>
+WHEN s3 =>
+WHEN s4 =>
+WHEN s5 =>
+WHEN s6 =>
+WHEN s7 =>
+END CASE;
+END IF;
+END PROCESS;
+WITH y SELECT 
+z <= '1' WHEN s4,
+'1' WHEN s5,
+'1' WHEN s6,
+'1' WHEN s7,
+'0' WHEN OTHERS,

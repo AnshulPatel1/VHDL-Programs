@@ -1,0 +1,254 @@
+Simulator report for 4-BitAdderSub
+Wed Oct 12 16:52:49 2016
+Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 120.0 ns     ;
+; Simulation Netlist Size     ; 79 nodes     ;
+; Simulation Coverage         ;      77.22 % ;
+; Total Number of Transitions ; 206          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                            ;
++--------------------------------------------------------------------------------------------+--------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                          ; Default Value ;
++--------------------------------------------------------------------------------------------+--------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                       ; Timing        ;
+; Start time                                                                                 ; 0 ns                                             ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                              ;               ;
+; Vector input source                                                                        ; /home/student1/aypatel/coe328/Lab3/Waveform1.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                               ; On            ;
+; Check outputs                                                                              ; Off                                              ; Off           ;
+; Report simulation coverage                                                                 ; On                                               ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                               ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                               ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                               ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                              ; Off           ;
+; Detect glitches                                                                            ; Off                                              ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                              ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                              ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                              ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                              ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                               ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                       ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                              ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                              ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                             ; Auto          ;
++--------------------------------------------------------------------------------------------+--------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 32-bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      77.22 % ;
+; Total nodes checked                                 ; 79           ;
+; Total output ports checked                          ; 79           ;
+; Total output ports with complete 1/0-value coverage ; 61           ;
+; Total output ports with no 1/0-value coverage       ; 13           ;
+; Total output ports with no 1-value coverage         ; 15           ;
+; Total output ports with no 0-value coverage         ; 16           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                ;
++--------------------+--------------------+------------------+
+; Node Name          ; Output Port Name   ; Output Port Type ;
++--------------------+--------------------+------------------+
+; |adder4|Sum~1      ; |adder4|Sum~1      ; out              ;
+; |adder4|Sum~2      ; |adder4|Sum~2      ; out              ;
+; |adder4|Sum~3      ; |adder4|Sum~3      ; out              ;
+; |adder4|Sum~4      ; |adder4|Sum~4      ; out              ;
+; |adder4|Overflow~2 ; |adder4|Overflow~2 ; out0             ;
+; |adder4|A~0        ; |adder4|A~0        ; out0             ;
+; |adder4|A~1        ; |adder4|A~1        ; out0             ;
+; |adder4|A~2        ; |adder4|A~2        ; out0             ;
+; |adder4|A~4        ; |adder4|A~4        ; out0             ;
+; |adder4|A~5        ; |adder4|A~5        ; out0             ;
+; |adder4|A~6        ; |adder4|A~6        ; out0             ;
+; |adder4|A~7        ; |adder4|A~7        ; out0             ;
+; |adder4|B~0        ; |adder4|B~0        ; out0             ;
+; |adder4|B~1        ; |adder4|B~1        ; out0             ;
+; |adder4|B~2        ; |adder4|B~2        ; out0             ;
+; |adder4|B~3        ; |adder4|B~3        ; out0             ;
+; |adder4|B~4        ; |adder4|B~4        ; out0             ;
+; |adder4|C~0        ; |adder4|C~0        ; out0             ;
+; |adder4|D~0        ; |adder4|D~0        ; out0             ;
+; |adder4|D~1        ; |adder4|D~1        ; out0             ;
+; |adder4|D~2        ; |adder4|D~2        ; out0             ;
+; |adder4|X[0]       ; |adder4|X[0]       ; out              ;
+; |adder4|X[1]       ; |adder4|X[1]       ; out              ;
+; |adder4|X[2]       ; |adder4|X[2]       ; out              ;
+; |adder4|Y[0]       ; |adder4|Y[0]       ; out              ;
+; |adder4|Y[1]       ; |adder4|Y[1]       ; out              ;
+; |adder4|Y[2]       ; |adder4|Y[2]       ; out              ;
+; |adder4|S[0]       ; |adder4|S[0]       ; pin_out          ;
+; |adder4|S[1]       ; |adder4|S[1]       ; pin_out          ;
+; |adder4|S[2]       ; |adder4|S[2]       ; pin_out          ;
+; |adder4|S[3]       ; |adder4|S[3]       ; pin_out          ;
+; |adder4|Overflow   ; |adder4|Overflow   ; pin_out          ;
+; |adder4|A          ; |adder4|A          ; pin_out          ;
+; |adder4|B          ; |adder4|B          ; pin_out          ;
+; |adder4|C          ; |adder4|C          ; pin_out          ;
+; |adder4|D          ; |adder4|D          ; pin_out          ;
+; |adder4|Add0~0     ; |adder4|Add0~0     ; out0             ;
+; |adder4|Add0~2     ; |adder4|Add0~2     ; out0             ;
+; |adder4|Add0~3     ; |adder4|Add0~3     ; out0             ;
+; |adder4|Add0~7     ; |adder4|Add0~7     ; out0             ;
+; |adder4|Add0~8     ; |adder4|Add0~8     ; out0             ;
+; |adder4|Add0~9     ; |adder4|Add0~9     ; out0             ;
+; |adder4|Add0~10    ; |adder4|Add0~10    ; out0             ;
+; |adder4|Add0~11    ; |adder4|Add0~11    ; out0             ;
+; |adder4|Add0~12    ; |adder4|Add0~12    ; out0             ;
+; |adder4|Add1~0     ; |adder4|Add1~0     ; out0             ;
+; |adder4|Add1~1     ; |adder4|Add1~1     ; out0             ;
+; |adder4|Add1~2     ; |adder4|Add1~2     ; out0             ;
+; |adder4|Add1~3     ; |adder4|Add1~3     ; out0             ;
+; |adder4|Add1~4     ; |adder4|Add1~4     ; out0             ;
+; |adder4|Add1~5     ; |adder4|Add1~5     ; out0             ;
+; |adder4|Add1~6     ; |adder4|Add1~6     ; out0             ;
+; |adder4|Add1~7     ; |adder4|Add1~7     ; out0             ;
+; |adder4|Add1~8     ; |adder4|Add1~8     ; out0             ;
+; |adder4|Add1~9     ; |adder4|Add1~9     ; out0             ;
+; |adder4|Add1~10    ; |adder4|Add1~10    ; out0             ;
+; |adder4|Add1~11    ; |adder4|Add1~11    ; out0             ;
+; |adder4|Add1~12    ; |adder4|Add1~12    ; out0             ;
+; |adder4|Add1~13    ; |adder4|Add1~13    ; out0             ;
+; |adder4|Add1~14    ; |adder4|Add1~14    ; out0             ;
+; |adder4|Add1~17    ; |adder4|Add1~17    ; out0             ;
++--------------------+--------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------+
+; Missing 1-Value Coverage                                   ;
++--------------------+--------------------+------------------+
+; Node Name          ; Output Port Name   ; Output Port Type ;
++--------------------+--------------------+------------------+
+; |adder4|Sum~0      ; |adder4|Sum~0      ; out              ;
+; |adder4|Overflow~0 ; |adder4|Overflow~0 ; out0             ;
+; |adder4|Overflow~1 ; |adder4|Overflow~1 ; out0             ;
+; |adder4|Cin        ; |adder4|Cin        ; out              ;
+; |adder4|X[3]       ; |adder4|X[3]       ; out              ;
+; |adder4|Y[3]       ; |adder4|Y[3]       ; out              ;
+; |adder4|Cout       ; |adder4|Cout       ; pin_out          ;
+; |adder4|Add0~5     ; |adder4|Add0~5     ; out0             ;
+; |adder4|Add0~6     ; |adder4|Add0~6     ; out0             ;
+; |adder4|Add0~13    ; |adder4|Add0~13    ; out0             ;
+; |adder4|Add0~14    ; |adder4|Add0~14    ; out0             ;
+; |adder4|Add0~15    ; |adder4|Add0~15    ; out0             ;
+; |adder4|Add0~16    ; |adder4|Add0~16    ; out0             ;
+; |adder4|Add1~15    ; |adder4|Add1~15    ; out0             ;
+; |adder4|Add1~16    ; |adder4|Add1~16    ; out0             ;
++--------------------+--------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------+
+; Missing 0-Value Coverage                                   ;
++--------------------+--------------------+------------------+
+; Node Name          ; Output Port Name   ; Output Port Type ;
++--------------------+--------------------+------------------+
+; |adder4|Sum~0      ; |adder4|Sum~0      ; out              ;
+; |adder4|Overflow~0 ; |adder4|Overflow~0 ; out0             ;
+; |adder4|Overflow~1 ; |adder4|Overflow~1 ; out0             ;
+; |adder4|A~3        ; |adder4|A~3        ; out0             ;
+; |adder4|X[3]       ; |adder4|X[3]       ; out              ;
+; |adder4|Y[3]       ; |adder4|Y[3]       ; out              ;
+; |adder4|Cout       ; |adder4|Cout       ; pin_out          ;
+; |adder4|Add0~1     ; |adder4|Add0~1     ; out0             ;
+; |adder4|Add0~4     ; |adder4|Add0~4     ; out0             ;
+; |adder4|Add0~6     ; |adder4|Add0~6     ; out0             ;
+; |adder4|Add0~13    ; |adder4|Add0~13    ; out0             ;
+; |adder4|Add0~14    ; |adder4|Add0~14    ; out0             ;
+; |adder4|Add0~15    ; |adder4|Add0~15    ; out0             ;
+; |adder4|Add0~16    ; |adder4|Add0~16    ; out0             ;
+; |adder4|Add1~15    ; |adder4|Add1~15    ; out0             ;
+; |adder4|Add1~16    ; |adder4|Add1~16    ; out0             ;
++--------------------+--------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 32-bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+    Info: Processing started: Wed Oct 12 16:52:48 2016
+Info: Command: quartus_sim --simulation_results_format=VWF 4-BitAdderSub -c 4-BitAdderSub
+Info (324025): Using vector source file "/home/student1/aypatel/coe328/Lab3/Waveform1.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      77.22 %
+Info (328052): Number of transitions in simulation is 206
+Info (324045): Vector file 4-BitAdderSub.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 32-bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 273 megabytes
+    Info: Processing ended: Wed Oct 12 16:52:49 2016
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

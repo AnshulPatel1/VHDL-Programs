@@ -1,0 +1,13 @@
+<internal_error>
+	<executable>quartus</executable>
+	<sub_system>unknown</sub_system>
+	<file>unknown</file>
+	<line>0</line>
+	<error>Current editor: STED</error>
+	<date>Fri Oct 17 18:02:10 2014</date>
+	<version>Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version</version>
+	<full_error>Segment Violation at (nil)
+Current editor: STED
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version </full_error>
+</internal_error>
+

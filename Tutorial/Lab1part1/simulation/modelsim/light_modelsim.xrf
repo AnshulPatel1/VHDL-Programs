@@ -1,0 +1,10 @@
+vendor_name = ModelSim
+source_file = 1, exampleschematic.bdf
+source_file = 1, /home/student1/aypatel/coe328/Tutorial/light.bdf
+source_file = 1, /home/student1/aypatel/coe328/Tutorial/db/light.cbx.xml
+design_name = light
+instance = comp, \x2~I\, x2, light, 1
+instance = comp, \x1~I\, x1, light, 1
+instance = comp, \x3~I\, x3, light, 1
+instance = comp, \inst2~0\, inst2~0, light, 1
+instance = comp, \f~I\, f, light, 1

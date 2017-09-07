@@ -1,0 +1,53 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'osc'
+Slack : -2.145
+TNS   : -40.278
+
+Type  : Slow Model Setup 'y.s4'
+Slack : -0.290
+TNS   : -0.697
+
+Type  : Slow Model Hold 'osc'
+Slack : -2.310
+TNS   : -3.483
+
+Type  : Slow Model Hold 'y.s4'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'osc'
+Slack : -1.380
+TNS   : -30.380
+
+Type  : Slow Model Minimum Pulse Width 'y.s4'
+Slack : -0.500
+TNS   : -8.000
+
+Type  : Fast Model Setup 'osc'
+Slack : -0.594
+TNS   : -6.797
+
+Type  : Fast Model Setup 'y.s4'
+Slack : 0.421
+TNS   : 0.000
+
+Type  : Fast Model Hold 'osc'
+Slack : -1.296
+TNS   : -2.300
+
+Type  : Fast Model Hold 'y.s4'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'osc'
+Slack : -1.380
+TNS   : -30.380
+
+Type  : Fast Model Minimum Pulse Width 'y.s4'
+Slack : -0.500
+TNS   : -8.000
+
+------------------------------------------------------------
